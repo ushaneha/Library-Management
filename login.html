@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: 'Times New Roman', Times, serif;
+          /* background-color:#1E6CC7; */
+          background-image: -webkit-linear-gradient(30deg, #14437a 50%,#1E6CC7 50%); 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+    
+        .container {
+          opacity: 0.9;
+          background-color: #fff;
+          padding: 30px;
+          border-radius: 20px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+          max-width: 400px;
+          width: 100%;
+          max-height: fit-content;
+        }
+    
+        h1 {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+    
+        label {
+          font-weight: bold;
+          display: block;
+          margin-bottom: 8px;
+        }
+    
+        input[type="text"],
+        input[type="password"] {
+          width: 100%;
+          padding: 10px;
+          border: 2px solid #ccc;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          transition: border-color 1.0s ease-in;
+        }
+        .t:focus,
+        .p:focus{
+            border-color: #1E6CC7;
+        }
+    
+        input[type="submit"] {
+          background-color: #1E6CC7;
+            color: #fff;
+            border-color: #fff;
+          font-size: large;
+          padding: 10px 20px;
+          border-style: double;
+          border-radius: 20px;
+          cursor: pointer;
+        }
+        .btn{
+           display: flex;
+          justify-content: center;
+        }
+        input[type="submit"]:hover{
+            color: #1E6CC7;
+          background-color: #ffffff;
+        }
+        .social-media {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+    
+        .social-media a {
+          text-decoration: none;
+          color: #fff;
+          background-color: #1E6CC7;
+          padding: 10px 20px;
+          border-radius: 5px;
+          margin: 0 5px;
+        }
+        .social-media a:hover{
+            color: #1E6CC7;
+          background-color: #ffffff;
+        }
+    
+        .sign{
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+          font-size: large;
+          font-weight: bold;
+        }
+        .sign a{
+            padding-left: 10px;
+            text-decoration: none;
+            color: #1E6CC7;
+        }
+        .sign a:hover{
+            text-decoration:underline ;
+        }
+        .home{
+          display: flex;
+          justify-content: center;
+          
+        }
+        .home a{
+          background-color: #1E6CC7;
+            color: #fff;
+          font-size: large;
+          text-decoration: none;
+          padding: 10px 20px;
+          border-radius: 18px;
+        }
+        .home a:hover{
+          color: #1E6CC7;
+          background-color: #ffffff;
+        }
+
+
+
+      </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form onsubmit="validateForm(event)">
+          <label for="email_mobile">Email or Mobile</label>
+          <input class="t" type="text" id="email_mobile" placeholder="Enter Email or Mobile No." required>
+    
+          <label for="password">Password</label>
+          <input class="p"  type="password" id="password" placeholder="Enter Password" required>
+          <div class="btn">
+            <input type="submit" value="Login">
+          </div>
+          
+    
+          <div class="social-media">
+            <a href="#" class="facebook">Facebook</a>
+            <a href="#" class="twitter">Twitter</a>
+            <a href="#" class="google">Google</a>
+          </div>
+          <br>
+          <div class="sign">
+            Don't have an account? <a href="signup.html">Sign up here</a>
+          </div>
+          <br>
+          <div class="home">
+            <a href="index.html">Go to Home</a>
+          </div>
+        </form>
+      </div>
+    
+</body>
+</html>  

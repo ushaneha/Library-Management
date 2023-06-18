@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BOOK_WISE</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="index.js"></script>
+ <script src="index12.js"></script>
+</head>
+
+
+<body>
+
+
+    <div class="loader-container">
+        <img src="media\loader.gif" alt="">
+    </div>
+
+
+
+<br><br><br><br><br>
+
+
+    <div class="container">
+      <div class="adpt">
+        <img src="media\logo.gif" alt="" height="80px">
+        <h1 class="heading">Welcome to the BOOK_WISE</h1>
+        <a class="btn" href="login.html">Sign in</a>
+        <div class="cart-icon" id="cartIcon" onclick="toggleCart()">
+          <img src="media\cart.png" alt="" height="30px">
+          <span id="cartCount">0</span>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+      </div>
+
+
+
+
+<br><br>
+      
+
+<div class="searchhh">
+  <div class="search-bar">
+    <button type="submit" id="searchButton"><i class="fas fa-search"></i></button>
+    <input type="text" id="searchInput" placeholder="Search books..." autocomplete="off">
+    <div class="suggestions" id="suggestions"></div>
+  </div>
+  
+</div>
+      
+      <!-- <div class="pagination">
+        <button id="prevButton" disabled>Previous</button>
+        <button id="nextButton" disabled>Next</button>
+      </div> -->
+      
+      <ul class="results" id="results"></ul>
+    
+
+
+
+      <h1>Technology</h1>
+      <div id="bookList" class="book-grid"></div>
+      <br><hr>
+
+      <h1>Fiction</h1>
+      <div id="bookList2" class="book-grid"></div>
+      <br><hr>
+
+      <h1>History</h1>
+      <div id="bookList3" class="book-grid"></div>
+      <br><hr>
+
+      <h1>Biography</h1>
+      <div id="bookList4" class="book-grid"></div>
+      <br><hr>
+
+      <h1>Arts and Music</h1>
+      <div id="bookList5" class="book-grid"></div>
+  
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="index.js"></script>
+      <script src="index12.js"></script>
+
+    </div>
+  </body>
+</html>
